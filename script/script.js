@@ -1,11 +1,11 @@
 async function getTempatures() {
-	let url = 'data/data.json';
-	try {
+    let url = 'data/data.json';
+    try {
         let result = await fetch(url);
         return await result.json();
-	} catch (error) {
+    } catch (error) {
         console.log(error);
-	}
+    }
 }
 
 async function renderData() {
